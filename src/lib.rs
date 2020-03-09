@@ -6,20 +6,20 @@ use dexie::Dexie;
 #[wasm_bindgen(module = "dexie-export-import")]
 extern "C" {
     #[wasm_bindgen(js_name=importDB)]
-    fn import_db(blob: &Blob) -> Promise;
+    pub fn import_db(blob: &Blob) -> Promise;
 
     #[wasm_bindgen(js_name=importDB)]
-    fn import_db_with_options(blob: &Blob, options: JsValue) -> Promise;
+    pub fn import_db_with_options(blob: &Blob, options: JsValue) -> Promise;
     
     #[wasm_bindgen(js_name=exportDB)]
-    fn export_db(db: &Dexie) -> Promise;
+    pub fn export_db(db: &Dexie) -> Promise;
     
     #[wasm_bindgen(js_name=exportDB)]
-    fn export_db_with_options(db: &Dexie, options: JsValue) -> Promise;
+    pub fn export_db_with_options(db: &Dexie, options: JsValue) -> Promise;
 
     #[wasm_bindgen(js_name=importInto)]
-    fn import_into(db: &Dexie, blob: &Blob) -> Promise;
+    pub fn import_into(db: &Dexie, blob: &Blob) -> Promise;
 
     #[wasm_bindgen(js_name=importInto)]
-    fn import_into_with_options(db: &Dexie, blob: &Blob, options: JsValue) -> Promise;
+    pub fn import_into_with_options(db: &Dexie, blob: &Blob, options: JsValue) -> Promise;
 }
