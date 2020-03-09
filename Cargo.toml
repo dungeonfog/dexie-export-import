@@ -1,0 +1,11 @@
+[package]
+name = "dexie-export-import"
+version = "0.1.0"
+authors = ["Andreas Monitzer <andreas@monitzer.com>"]
+edition = "2018"
+
+[dependencies]
+wasm-bindgen = "0.2"
+js-sys = "0.3"
+web-sys = { version = "0.3", features = ["Blob"] }
+dexie = { git = "https://github.com/anlumo/dexie-rs.git" }
