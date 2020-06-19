@@ -8,4 +8,4 @@ edition = "2018"
 wasm-bindgen = "0.2"
 js-sys = "0.3"
 web-sys = { version = "0.3", features = ["Blob"] }
-dexie = { git = "https://github.com/dungeonfog/dexie-rs.git", rev = "ee6316bd9fcdb183d505fb405c64a8f0a5f39c51" }
+dexie = { git = "https://github.com/dungeonfog/dexie-rs.git", rev = "a5510f607825be518c24fa18284c5e7881053fa6" }
